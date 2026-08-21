@@ -1,0 +1,17 @@
+// [Kya dekh ra he ladle DevAman name he mera]
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
+import App from './App.tsx';
+import './styles/global.css';
+
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <HelmetProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </HelmetProvider>
+  </StrictMode>,
+);

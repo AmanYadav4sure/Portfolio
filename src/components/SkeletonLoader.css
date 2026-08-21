@@ -1,0 +1,57 @@
+.skeleton-container {
+  min-height: calc(100svh - var(--navbar-height, 100px));
+  padding-top: clamp(40px, 7vw, 100px);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+}
+
+.skeleton-header {
+  height: clamp(3rem, 6vw, 6rem);
+  width: 60%;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.skeleton-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.skeleton-line {
+  height: 1.5rem;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 4px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.skeleton-line.short {
+  width: 70%;
+}
+
+.skeleton-block {
+  height: 300px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  margin-top: 2rem;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
