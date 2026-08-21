@@ -89,7 +89,7 @@ export default function Home() {
           "@graph": [
             {
               "@type": "Person",
-              "@id": "https://your-production-domain.com/#person",
+              "@id": "https://devamanyadav.vercel.app/#person",
               "name": "Aman Yadav",
               "jobTitle": "Web & App Developer",
               "description": "Grade 10 student and developer from Janakpur, Nepal interested in web development, Android development, and cyber security.",
@@ -107,7 +107,7 @@ export default function Home() {
                 "JavaScript",
                 "Cyber Security"
               ],
-              "url": "https://your-production-domain.com",
+              "url": "https://devamanyadav.vercel.app/",
               "sameAs": [
                 "https://github.com/AmanYadav4sure",
                 "https://www.linkedin.com/in/aman-yadav-5119433b6/",
@@ -116,9 +116,9 @@ export default function Home() {
             },
             {
               "@type": "WebSite",
-              "@id": "https://your-production-domain.com/#website",
+              "@id": "https://devamanyadav.vercel.app//#website",
               "name": "Aman Yadav",
-              "url": "https://your-production-domain.com"
+              "url": "https://devamanyadav.vercel.app/"
             }
           ]
         }}
@@ -146,7 +146,7 @@ export default function Home() {
               EXPLORE MY WORK <ArrowRight size={20} />
             </MagneticButton>
             <MagneticButton className="btn-secondary" onClick={() => handleNavClick('/contact')}>
-              CONTACT ME ↗
+                CONTACT ME ↗
             </MagneticButton>
           </div>
 
