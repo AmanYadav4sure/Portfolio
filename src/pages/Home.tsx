@@ -146,7 +146,7 @@ export default function Home() {
               EXPLORE MY WORK <ArrowRight size={20} />
             </MagneticButton>
             <MagneticButton className="btn-secondary" onClick={() => handleNavClick('/contact')}>
-                CONTACT ME ↗
+            CONTACT ME ↗
             </MagneticButton>
           </div>
 
