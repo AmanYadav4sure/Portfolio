@@ -90,7 +90,7 @@ export default function Home() {
           "@graph": [
             {
               "@type": "Person",
-              "@id": "https://your-production-domain.com/#person",
+              "@id": "https://devamanyadav.vercel.app/#person",
               "name": "Aman Yadav",
               "jobTitle": "Web & App Developer",
               "description": "Grade 10 student and developer from Janakpur, Nepal interested in web development, Android development, and cyber security.",
@@ -108,7 +108,7 @@ export default function Home() {
                 "JavaScript",
                 "Cyber Security"
               ],
-              "url": "https://your-production-domain.com",
+              "url": "https://devamanyadav.vercel.app/",
               "sameAs": [
                 "https://github.com/AmanYadav4sure",
                 "https://www.linkedin.com/in/aman-yadav-5119433b6/",
@@ -117,15 +117,15 @@ export default function Home() {
             },
             {
               "@type": "WebSite",
-              "@id": "https://your-production-domain.com/#website",
+              "@id": "https://devamanyadav.vercel.app/#website",
               "name": "Aman Yadav",
-              "url": "https://your-production-domain.com"
+              "url": "https://devamanyadav.vercel.app/"
             },
             {
               "@type": "LocalBusiness",
-              "@id": "https://your-production-domain.com/#localbusiness",
+              "@id": "https://devamanyadav.vercel.app/#localbusiness",
               "name": "Aman Yadav - Web & App Developer",
-              "image": "https://your-production-domain.com/og-image.jpg",
+              "image": "https://devamanyadav.vercel.app/og-image.jpg",
               "telephone": "+977-9764495684",
               "address": {
                 "@type": "PostalAddress",
@@ -140,34 +140,39 @@ export default function Home() {
         }}
       />
       <section className="hero-section container">
-        <div className="hero-content">
-          <p className="hero-greeting mono text-accent">HELLO, I'M</p>
-          <h1 className="hero-title">
-            <div className="overflow-hidden"><span>AMAN</span></div>
-            <div className="overflow-hidden"><span>YADAV</span></div>
-          </h1>
-          
-          <div className="hero-roles mono">
-            <span className="typing-role">WEB DEVELOPER</span>
+        <div className="hero-layout">
+          <div className="hero-content">
+            <p className="hero-greeting mono text-accent">HELLO, I'M</p>
+            <h1 className="hero-title">
+              <div className="overflow-hidden"><span>AMAN</span></div>
+              <div className="overflow-hidden"><span>YADAV</span></div>
+            </h1>
+            
+            <div className="hero-roles mono">
+              <span className="typing-role">WEB DEVELOPER</span>
+            </div>
+
+            <h2 className="hero-statement">
+              I BUILD DIGITAL EXPERIENCES<br/>
+              AND EXPLORE HOW TO KEEP<br/>
+              THEM SECURE.
+            </h2>
+
+            <div className="hero-ctas">
+              <MagneticButton className="btn-primary" onClick={() => handleNavClick('/projects')}>
+                EXPLORE MY WORK <ArrowRight size={20} />
+              </MagneticButton>
+              <MagneticButton className="btn-secondary" onClick={() => handleNavClick('/contact')}>
+                CONTACT ME ↗
+              </MagneticButton>
+            </div>
+
+            <div className="hero-status mono">
+              <span className="status-dot"></span> AVAILABLE FOR PROJECTS / COLLABORATION
+            </div>
           </div>
-
-          <h2 className="hero-statement">
-            I BUILD DIGITAL EXPERIENCES<br/>
-            AND EXPLORE HOW TO KEEP<br/>
-            THEM SECURE.
-          </h2>
-
-          <div className="hero-ctas">
-            <MagneticButton className="btn-primary" onClick={() => handleNavClick('/projects')}>
-              EXPLORE MY WORK <ArrowRight size={20} />
-            </MagneticButton>
-            <MagneticButton className="btn-secondary" onClick={() => handleNavClick('/contact')}>
-              CONTACT ME ↗
-            </MagneticButton>
-          </div>
-
-          <div className="hero-status mono">
-            <span className="status-dot"></span> AVAILABLE FOR PROJECTS / COLLABORATION
+          <div className="hero-image-container">
+            <img src="/hero-image.png" alt="Aman Yadav" className="hero-image" />
           </div>
         </div>
       </section>
