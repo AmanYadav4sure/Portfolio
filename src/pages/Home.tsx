@@ -82,8 +82,8 @@ export default function Home() {
   return (
     <div ref={containerRef} className="home-page">
       <SEO 
-        title="Aman Yadav — Web & App Developer in Nepal"
-        description="Hi, I'm Aman Yadav. I'm a Grade 10 student and self-taught developer from Nepal, passionate about building apps, websites, and exploring cyber security."
+        title="Aman Yadav - Official Portfolio | Web & App Developer"
+        description="Official portfolio of Aman Yadav, a Grade 10 student and self-taught developer from Nepal, passionate about building apps, websites, and exploring cyber security."
         canonical="/"
         jsonLd={{
           "@context": "https://schema.org",
@@ -126,7 +126,7 @@ export default function Home() {
               "@id": "https://your-production-domain.com/#localbusiness",
               "name": "Aman Yadav - Web & App Developer",
               "image": "https://your-production-domain.com/og-image.jpg",
-              "telephone": "+977-9800000000",
+              "telephone": "+977-9764495684",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Janakpurdham",
@@ -309,15 +309,6 @@ export default function Home() {
           <a href="https://www.instagram.com/dev.amanyadav/" target="_blank" rel="noopener noreferrer" className="social-link" data-cursor-text="OPEN ↗">
             <span>INSTAGRAM ↗</span>
           </a>
-          <a href="https://twitter.com/dev_amanyadav" target="_blank" rel="noopener noreferrer" className="social-link" data-cursor-text="OPEN ↗">
-            <span>X (TWITTER) ↗</span>
-          </a>
-          <a href="https://facebook.com/dev.amanyadav" target="_blank" rel="noopener noreferrer" className="social-link" data-cursor-text="OPEN ↗">
-            <span>FACEBOOK ↗</span>
-          </a>
-          <a href="https://youtube.com/@dev_amanyadav" target="_blank" rel="noopener noreferrer" className="social-link" data-cursor-text="OPEN ↗">
-            <span>YOUTUBE ↗</span>
-          </a>
         </div>
       </section>
 
@@ -329,7 +320,7 @@ export default function Home() {
             <p className="mono">WEB DEVELOPER / APP DEVELOPER / CYBER SECURITY</p>
             <p className="mono" style={{marginTop: '1rem', color: 'var(--text-muted)'}}>
               Janakpurdham, Dhanusha, Nepal<br/>
-              +977 9800000000
+              +977 9764495684
             </p>
           </div>
           <div className="footer-meta mono">
@@ -337,6 +328,7 @@ export default function Home() {
             <span>© 2026 AMAN YADAV</span>
           </div>
         </div>
+        {/* #DevAmanyadav */}
       </footer>
     </div>
   );

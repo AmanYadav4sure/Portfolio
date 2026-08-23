@@ -1,7 +1,6 @@
-import { useState, lazy, Suspense } from 'react';
+import { lazy, Suspense } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import SmoothScroll from './components/SmoothScroll';
-import { Preloader } from './components/Preloader';
 import { Navbar } from './components/Navbar';
 
 import { SkeletonLoader } from './components/SkeletonLoader';
@@ -15,17 +14,13 @@ const Contact = lazy(() => import('./pages/Contact'));
 // ----------------------------------------------------
 
 function App() {
-  const [loading, setLoading] = useState(true);
   const location = useLocation();
 
   return (
     <>
-      {loading && <Preloader onComplete={() => setLoading(false)} />}
-      
       <div className="transition-layer"></div>
       
-      {!loading && (
-        <SmoothScroll>
+      <SmoothScroll>
           <Navbar />
           
           <main className="page-content" key={location.pathname}>
@@ -38,7 +33,6 @@ function App() {
             </Suspense>
           </main>
         </SmoothScroll>
-      )}
     </>
   );
 }
