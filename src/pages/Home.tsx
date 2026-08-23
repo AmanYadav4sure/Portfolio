@@ -15,6 +15,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { MagneticButton } from '../components/MagneticButton';
 import { SEO } from '../components/SEO';
+import { projects } from '../data/projects';
 import './Home.css';
 import { ArrowRight } from 'lucide-react';
 
@@ -82,7 +83,7 @@ export default function Home() {
     <div ref={containerRef} className="home-page">
       <SEO 
         title="Aman Yadav — Web & App Developer in Nepal"
-        description="Aman Yadav is a Grade 10 student and web & app developer from Janakpur, Nepal, exploring software development, Android development, and cyber security."
+        description="Hi, I'm Aman Yadav. I'm a Grade 10 student and self-taught developer from Nepal, passionate about building apps, websites, and exploring cyber security."
         canonical="/"
         jsonLd={{
           "@context": "https://schema.org",
@@ -119,6 +120,21 @@ export default function Home() {
               "@id": "https://your-production-domain.com/#website",
               "name": "Aman Yadav",
               "url": "https://your-production-domain.com"
+            },
+            {
+              "@type": "LocalBusiness",
+              "@id": "https://your-production-domain.com/#localbusiness",
+              "name": "Aman Yadav - Web & App Developer",
+              "image": "https://your-production-domain.com/og-image.jpg",
+              "telephone": "+977-9800000000",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Janakpurdham",
+                "addressLocality": "Janakpur",
+                "addressRegion": "Dhanusha",
+                "postalCode": "45600",
+                "addressCountry": "NP"
+              }
             }
           ]
         }}
@@ -156,15 +172,46 @@ export default function Home() {
         </div>
       </section>
 
-      
+      <section className="featured-projects-section container reveal-section">
+        <span className="section-label">SELECTED WORK</span>
+        <h2 className="section-title">RECENT PROJECTS</h2>
+        <div className="featured-projects-grid">
+          {projects.slice(0, 4).map((project) => (
+            <div 
+              key={project.id} 
+              className="featured-project-card glass-panel"
+              onClick={() => {
+                if (project.liveUrl) window.open(project.liveUrl, '_blank', 'noopener,noreferrer');
+              }}
+              style={{ cursor: project.liveUrl ? 'pointer' : 'default' }}
+            >
+              <div className="featured-project-image">
+                <img src={project.image} alt={project.title} loading="lazy" />
+              </div>
+              <div className="featured-project-info">
+                <span className="mono text-accent">{project.category}</span>
+                <h3>{project.title}</h3>
+                <p className="mono featured-tech">{project.technologies.slice(0, 3).join(' / ')}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="view-all-container">
+          <MagneticButton className="btn-primary" onClick={() => handleNavClick('/projects')}>
+            VIEW ALL PROJECTS <ArrowRight size={20} />
+          </MagneticButton>
+        </div>
+      </section>
+
       <section id="about" className="about-section container reveal-section">
         <span className="section-label">ABOUT ME</span>
         <h2 className="section-title">WHO IS AMAN YADAV?</h2>
         <div className="about-grid">
           <div className="about-text-content">
-            <p><strong>Aman Yadav is a Grade 10 student and web & app developer from Janakpur, Nepal.</strong></p>
-            <p>He builds modern web interfaces, Android applications, and actively studies cyber security and secure software development.</p>
-            <p>I enjoy learning by building real projects, exploring new frontend technologies, and experimenting with Kotlin and Python to solve technical challenges.</p>
+            <p><strong>Hi, I'm Aman Yadav! I'm a Grade 10 student and self-taught web and app developer based in Janakpur, Nepal.</strong></p>
+            <p>My journey into technology started with a deep curiosity about how software works. Today, I build modern web interfaces, Android applications, and actively study cyber security and secure software development practices.</p>
+            <p>I enjoy learning by building real-world projects. I constantly explore new frontend technologies like React and GSAP to craft engaging user experiences. On the mobile side, I experiment with Kotlin to solve technical challenges and build robust Android apps.</p>
+            <p>When I'm not coding, you can find me researching web security vulnerabilities or exploring the intersection of design and development. I believe that good software should not only look great but also be highly secure and performant.</p>
           </div>
           <div className="about-timeline glass-panel">
             <div className="timeline-item">
@@ -262,6 +309,15 @@ export default function Home() {
           <a href="https://www.instagram.com/dev.amanyadav/" target="_blank" rel="noopener noreferrer" className="social-link" data-cursor-text="OPEN ↗">
             <span>INSTAGRAM ↗</span>
           </a>
+          <a href="https://twitter.com/dev_amanyadav" target="_blank" rel="noopener noreferrer" className="social-link" data-cursor-text="OPEN ↗">
+            <span>X (TWITTER) ↗</span>
+          </a>
+          <a href="https://facebook.com/dev.amanyadav" target="_blank" rel="noopener noreferrer" className="social-link" data-cursor-text="OPEN ↗">
+            <span>FACEBOOK ↗</span>
+          </a>
+          <a href="https://youtube.com/@dev_amanyadav" target="_blank" rel="noopener noreferrer" className="social-link" data-cursor-text="OPEN ↗">
+            <span>YOUTUBE ↗</span>
+          </a>
         </div>
       </section>
 
@@ -271,6 +327,10 @@ export default function Home() {
           <div className="footer-brand">
             <h3>AMAN YADAV</h3>
             <p className="mono">WEB DEVELOPER / APP DEVELOPER / CYBER SECURITY</p>
+            <p className="mono" style={{marginTop: '1rem', color: 'var(--text-muted)'}}>
+              Janakpurdham, Dhanusha, Nepal<br/>
+              +977 9800000000
+            </p>
           </div>
           <div className="footer-meta mono">
             <span>JANAKPUR / NEPAL</span>

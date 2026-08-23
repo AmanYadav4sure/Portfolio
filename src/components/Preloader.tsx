@@ -1,71 +1,42 @@
-/* ~ Kya dekh ra he ladle DevAman name he mera ~ */
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import gsap from 'gsap';
-import './Preloader.css';
 
-interface PreloaderProps {
-  onComplete: () => void;
-}
-
-export const Preloader = ({ onComplete }: PreloaderProps) => {
-  const [progress, setProgress] = useState(0);
-
+export const Preloader = ({ onComplete }: { onComplete: () => void }) => {
   useEffect(() => {
-    let currentProgress = 0;
-    
-    // Simulate loading
-    const interval = setInterval(() => {
-      currentProgress += Math.floor(Math.random() * 15) + 5;
-      if (currentProgress > 100) currentProgress = 100;
-      
-      setProgress(currentProgress);
-
-      if (currentProgress === 100) {
-        clearInterval(interval);
-        
-        // Animate out
-        gsap.to('.preloader-content', {
-          y: -50,
-          opacity: 0,
-          duration: 0.8,
-          ease: 'power3.inOut',
-          delay: 0.2
-        });
-
+    const tl = gsap.timeline({
+      onComplete: () => {
         gsap.to('.preloader', {
-          yPercent: -100,
+          y: '-100%',
           duration: 1,
-          ease: 'expo.inOut',
-          delay: 0.5,
-          onComplete: () => {
-            onComplete();
-          }
+          ease: 'power4.inOut',
+          onComplete
         });
       }
-    }, 150);
+    });
 
-    return () => clearInterval(interval);
+    tl.to('.preloader-text', {
+      opacity: 1,
+      duration: 1,
+      y: 0,
+      ease: 'power2.out'
+    }).to('.preloader-text', {
+      opacity: 0,
+      duration: 0.5,
+      delay: 0.5
+    });
   }, [onComplete]);
 
   return (
-    <div className="preloader">
-      <div className="preloader-content">
-        <div className="preloader-header mono">
-          <span>AMAN YADAV®</span>
-          <span>WEB / APP / CYBER</span>
-        </div>
-        
-        <div className="preloader-center">
-          <div className="progress-number">{progress}%</div>
-          <div className="progress-bar-container">
-            <div className="progress-bar" style={{ width: `${progress}%` }}></div>
-          </div>
-        </div>
-        
-        <div className="preloader-footer mono">
-          <span>EXPERIENCE LOADING</span>
-          <span>2026</span>
-        </div>
+    <div className="preloader" style={{
+      position: 'fixed', top: 0, left: 0, width: '100%', height: '100%',
+      backgroundColor: 'var(--bg-primary)', zIndex: 9999, display: 'flex',
+      alignItems: 'center', justifyContent: 'center'
+    }}>
+      <div className="preloader-text" style={{
+        opacity: 0, transform: 'translateY(20px)', fontSize: '2rem',
+        fontFamily: 'var(--font-primary)', color: 'var(--text-primary)'
+      }}>
+        Sketching...
       </div>
     </div>
   );

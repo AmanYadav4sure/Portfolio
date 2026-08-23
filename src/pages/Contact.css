@@ -95,13 +95,13 @@
 
 .form-group input,
 .form-group textarea {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--border-color);
+  background: transparent;
+  border: 2px solid var(--text-primary);
   padding: 1rem;
   color: var(--text-primary);
   font-family: var(--font-primary);
-  font-size: 1rem;
-  border-radius: 4px;
+  font-size: 1.2rem;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   transition: border-color 0.3s ease, background-color 0.3s ease;
   outline: none;
 }
@@ -109,7 +109,7 @@
 .form-group input:focus,
 .form-group textarea:focus {
   border-color: var(--accent-primary);
-  background: rgba(168, 255, 62, 0.05);
+  background: rgba(59, 108, 181, 0.05); /* very light blue for sketch pencil focus */
 }
 
 .submit-btn {

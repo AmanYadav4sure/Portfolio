@@ -3,7 +3,6 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import SmoothScroll from './components/SmoothScroll';
 import { Preloader } from './components/Preloader';
 import { Navbar } from './components/Navbar';
-import { ThreeBackground } from './components/ThreeBackground';
 
 import { SkeletonLoader } from './components/SkeletonLoader';
 
@@ -27,7 +26,6 @@ function App() {
       
       {!loading && (
         <SmoothScroll>
-          <ThreeBackground />
           <Navbar />
           
           <main className="page-content" key={location.pathname}>

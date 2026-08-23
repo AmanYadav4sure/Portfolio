@@ -107,12 +107,12 @@ export const ThreeBackground = () => {
     window.addEventListener('resize', onWindowResize);
 
     
-    const clock = new THREE.Clock();
+    let startTime = performance.now();
     let animationFrameId: number;
 
     const animate = () => {
       animationFrameId = requestAnimationFrame(animate);
-      const elapsedTime = clock.getElapsedTime();
+      const elapsedTime = (performance.now() - startTime) / 1000;
       
       material.uniforms.uTime.value = elapsedTime;
 

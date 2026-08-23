@@ -1,0 +1,17 @@
+# Aman Yadav - Web & App Developer Portfolio
+
+Aman Yadav is a Grade 10 student and self-taught developer from Janakpur, Nepal. He is passionate about building modern web applications, Android apps (using Kotlin), and exploring cyber security.
+
+## Key Skills
+- Web Development (React, TypeScript, HTML/CSS, JavaScript)
+- App Development (Android, Kotlin)
+- Cyber Security (Defensive security, web security)
+
+## Projects
+- Various full-stack web and mobile applications focusing on performance and UI/UX.
+
+## Contact
+- GitHub: https://github.com/AmanYadav4sure
+- LinkedIn: https://www.linkedin.com/in/aman-yadav-5119433b6/
+- Instagram: https://www.instagram.com/dev.amanyadav/
+
