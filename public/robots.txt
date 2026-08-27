@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
+Sitemap: https://amanyadav.site/sitemap.xml
 
-Sitemap: https://devamanyadav.vercel.app//sitemap.xml

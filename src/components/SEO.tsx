@@ -9,7 +9,7 @@ interface SEOProps {
   jsonLd?: Record<string, any> | Record<string, any>[];
 }
 
-const siteUrl = import.meta.env.VITE_SITE_URL || 'https://devamanyadav.vercel.app';
+const siteUrl = import.meta.env.VITE_SITE_URL || 'https://amanyadav.site';
 
 export const SEO = ({
   title,

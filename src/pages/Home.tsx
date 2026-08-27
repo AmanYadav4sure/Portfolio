@@ -90,51 +90,53 @@ export default function Home() {
           "@graph": [
             {
               "@type": "Person",
-              "@id": "https://devamanyadav.vercel.app/#person",
+              "@id": "https://amanyadav.site/#person",
               "name": "Aman Yadav",
-              "jobTitle": "Web & App Developer",
-              "description": "Grade 10 student and developer from Janakpur, Nepal interested in web development, Android development, and cyber security.",
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Janakpur",
-                "addressCountry": "NP"
-              },
-              "knowsAbout": [
-                "Web Development",
-                "App Development",
-                "Android Development",
-                "Python",
-                "Kotlin",
-                "JavaScript",
-                "Cyber Security"
-              ],
-              "url": "https://devamanyadav.vercel.app/",
+              "jobTitle": "Mobile Application Developer & AI-Native Software Engineer",
+              "description": "Mobile Application Developer & AI-Native Software Engineer specializing in Flutter, Dart, React Native, and AI-driven software development.",
+              "url": "https://amanyadav.site",
               "sameAs": [
                 "https://github.com/AmanYadav4sure",
                 "https://www.linkedin.com/in/aman-yadav-5119433b6/",
                 "https://www.instagram.com/dev.amanyadav/"
+              ],
+              "knowsAbout": ["Flutter", "Dart", "React Native", "Mobile Apps", "Supabase", "AI-Driven Software Development", "Generative AI"]
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://amanyadav.site/#faq",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Who is Aman Yadav?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Aman Yadav is an AI-native software engineer and mobile application developer based in Janakpur, Nepal, and the owner of the official domain amanyadav.site."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What does Aman Yadav build?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Aman Yadav builds high-performance mobile applications using Flutter, Dart, and React Native, powered by cloud backends like Supabase and AI-driven architectures."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What is Aman Yadav's official website?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Aman Yadav's official website is https://amanyadav.site, which showcases his mobile development portfolio and software engineering projects."
+                  }
+                }
               ]
             },
             {
               "@type": "WebSite",
-              "@id": "https://devamanyadav.vercel.app/#website",
-              "name": "Aman Yadav",
-              "url": "https://devamanyadav.vercel.app/"
-            },
-            {
-              "@type": "LocalBusiness",
-              "@id": "https://devamanyadav.vercel.app/#localbusiness",
-              "name": "Aman Yadav - Web & App Developer",
-              "image": "https://devamanyadav.vercel.app/og-image.jpg",
-              "telephone": "+977-9764495684",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Janakpurdham",
-                "addressLocality": "Janakpur",
-                "addressRegion": "Dhanusha",
-                "postalCode": "45600",
-                "addressCountry": "NP"
-              }
+              "@id": "https://amanyadav.site/#website",
+              "name": "Aman Yadav Official Portfolio",
+              "url": "https://amanyadav.site"
             }
           ]
         }}
