@@ -45,7 +45,7 @@ export default function Home() {
       });
 
       // Role Typing Effect
-      const roles = ["WEB DEVELOPER", "APP DEVELOPER", "CYBER SECURITY ANALYST"];
+      const roles = ["MOBILE APP DEVELOPER", "AI-NATIVE ENGINEER", "FLUTTER DEVELOPER", "REACT NATIVE DEVELOPER"];
       let roleIndex = 0;
       const roleElement = document.querySelector('.typing-role');
       
@@ -82,8 +82,8 @@ export default function Home() {
   return (
     <div ref={containerRef} className="home-page">
       <SEO 
-        title="Aman Yadav - Official Portfolio | Web & App Developer"
-        description="Official portfolio of Aman Yadav, a Grade 10 student and self-taught developer from Nepal, passionate about building apps, websites, and exploring cyber security."
+        title="Aman Yadav - Official Portfolio | Mobile & AI Developer"
+        description="Official portfolio of Aman Yadav, an AI-native software engineer and mobile application developer specializing in Flutter, React Native, and Supabase."
         canonical="/"
         jsonLd={{
           "@context": "https://schema.org",
@@ -151,7 +151,7 @@ export default function Home() {
             </h1>
             
             <div className="hero-roles mono">
-              <span className="typing-role">WEB DEVELOPER</span>
+              <span className="typing-role">MOBILE APP DEVELOPER</span>
             </div>
 
             <h2 className="hero-statement">
@@ -215,18 +215,18 @@ export default function Home() {
         <h2 className="section-title">WHO IS AMAN YADAV?</h2>
         <div className="about-grid">
           <div className="about-text-content">
-            <p><strong>Hi, I'm Aman Yadav! I'm a Grade 10 student and self-taught web and app developer based in Janakpur, Nepal.</strong></p>
-            <p>My journey into technology started with a deep curiosity about how software works. Today, I build modern web interfaces, Android applications, and actively study cyber security and secure software development practices.</p>
-            <p>I enjoy learning by building real-world projects. I constantly explore new frontend technologies like React and GSAP to craft engaging user experiences. On the mobile side, I experiment with Kotlin to solve technical challenges and build robust Android apps.</p>
-            <p>When I'm not coding, you can find me researching web security vulnerabilities or exploring the intersection of design and development. I believe that good software should not only look great but also be highly secure and performant.</p>
+            <p><strong>Hi, I'm Aman Yadav! I'm an AI-native software engineer and mobile application developer based in Janakpur, Nepal.</strong></p>
+            <p>My journey into technology started with a deep curiosity about how software works. Today, I build modern mobile applications and actively integrate Generative AI into my software architectures.</p>
+            <p>I enjoy learning by building real-world projects. I constantly explore new mobile technologies like Flutter, Dart, and React Native to craft engaging user experiences. On the backend side, I utilize Supabase and cloud-native services to build scalable and robust solutions.</p>
+            <p>When I'm not coding, you can find me researching the latest AI models or exploring the intersection of mobile design and full-stack development. I believe that good software should not only look great but also be highly intelligent and performant.</p>
           </div>
           <div className="about-timeline glass-panel">
             <div className="timeline-item">
               <span className="timeline-dot"></span>
               <div className="timeline-content">
                 <span className="mono text-accent">CURRENT</span>
-                <h4>GRADE 10</h4>
-                <p>WEB DEVELOPMENT / APP DEVELOPMENT / CYBER SECURITY</p>
+                <h4>DEVELOPER</h4>
+                <p>MOBILE DEVELOPMENT / AI ENGINEERING / SUPABASE</p>
               </div>
             </div>
           </div>
@@ -238,9 +238,9 @@ export default function Home() {
         <span className="section-label">WHAT I DO</span>
         <div className="services-list">
           {[
-            { id: '01', title: 'WEB DEVELOPMENT', desc: 'Modern responsive interfaces, interactive experiences and frontend engineering.' },
-            { id: '02', title: 'APP DEVELOPMENT', desc: 'Android applications and Kotlin-based development.' },
-            { id: '03', title: 'CYBER SECURITY', desc: 'Security research, secure development and learning defensive security techniques.' }
+            { id: '01', title: 'MOBILE APP DEVELOPMENT', desc: 'High-performance cross-platform applications using Flutter, Dart, and React Native.' },
+            { id: '02', title: 'AI INTEGRATION', desc: 'Integrating generative AI capabilities and intelligence into modern software architectures.' },
+            { id: '03', title: 'CLOUD BACKENDS', desc: 'Architecting scalable serverless databases and authentication using Supabase and Firebase.' }
           ].map((service) => (
             <div className="service-card glass-panel" key={service.id} data-cursor-interact="true">
               <span className="service-number mono text-accent">{service.id}</span>
@@ -261,18 +261,18 @@ export default function Home() {
         
         <div className="skills-container glass-panel">
           <div className="skills-tabs">
-            {['ALL', 'LANGUAGES', 'WEB', 'APP', 'SECURITY'].map(tab => (
+            {['ALL', 'MOBILE', 'AI', 'CLOUD', 'LANGUAGES'].map(tab => (
               <button key={tab} className={`skill-tab ${tab === 'ALL' ? 'active' : ''}`}>{tab}</button>
             ))}
           </div>
           
           <div className="skills-list">
             {[
-              { name: 'PYTHON', category: 'LANGUAGE / SECURITY' },
-              { name: 'KOTLIN', category: 'LANGUAGE / ANDROID' },
-              { name: 'HTML / CSS', category: 'WEB' },
-              { name: 'JAVASCRIPT', category: 'LANGUAGE / WEB' },
-              { name: 'CYBER SECURITY', category: 'SECURITY / ANALYSIS' }
+              { name: 'FLUTTER', category: 'MOBILE' },
+              { name: 'DART', category: 'LANGUAGE / MOBILE' },
+              { name: 'REACT NATIVE', category: 'MOBILE' },
+              { name: 'SUPABASE', category: 'CLOUD / BACKEND' },
+              { name: 'GENERATIVE AI', category: 'AI / ENGINEERING' }
             ].map((skill, index) => (
               <div key={index} className="skill-row" data-cursor-interact="true">
                 <span className="skill-name">{skill.name}</span>
@@ -285,20 +285,20 @@ export default function Home() {
 
       
       <section className="security-section container reveal-section">
-        <span className="section-label">SECURITY MINDSET</span>
-        <h2 className="section-title">DEFENSIVE THINKING</h2>
+        <span className="section-label">AI-NATIVE MINDSET</span>
+        <h2 className="section-title">ENGINEERING PHILOSOPHY</h2>
         <div className="security-grid">
           <div className="security-card glass-panel">
-            <h4 className="mono text-accent">SECURE BY DESIGN</h4>
-            <p>Integrating security principles into the development lifecycle from day one.</p>
+            <h4 className="mono text-accent">AI-FIRST ARCHITECTURE</h4>
+            <p>Integrating Generative AI and LLMs directly into application workflows for intelligent user experiences.</p>
           </div>
           <div className="security-card glass-panel">
-            <h4 className="mono text-accent">WEB SECURITY</h4>
-            <p>Understanding and mitigating common web vulnerabilities and threats.</p>
+            <h4 className="mono text-accent">MOBILE PERFORMANCE</h4>
+            <p>Optimizing Flutter and React Native rendering pipelines for smooth, native-like 60fps animations.</p>
           </div>
           <div className="security-card glass-panel">
-            <h4 className="mono text-accent">APPLICATION SECURITY</h4>
-            <p>Building resilient Android and frontend architectures with defensive coding practices.</p>
+            <h4 className="mono text-accent">SCALABLE CLOUD</h4>
+            <p>Building resilient, secure, and serverless backend infrastructures with Supabase and Firebase.</p>
           </div>
         </div>
       </section>
@@ -324,7 +324,7 @@ export default function Home() {
         <div className="footer-content">
           <div className="footer-brand">
             <h3>AMAN YADAV</h3>
-            <p className="mono">WEB DEVELOPER / APP DEVELOPER / CYBER SECURITY</p>
+            <p className="mono">MOBILE APP DEVELOPER / AI-NATIVE SOFTWARE ENGINEER</p>
             <p className="mono" style={{marginTop: '1rem', color: 'var(--text-muted)'}}>
               Janakpurdham, Dhanusha, Nepal<br/>
               +977 9764495684
