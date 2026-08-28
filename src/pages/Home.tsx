@@ -82,8 +82,8 @@ export default function Home() {
   return (
     <div ref={containerRef} className="home-page">
       <SEO 
-        title="Aman Yadav - Official Portfolio | Mobile & AI Developer"
-        description="Official portfolio of Aman Yadav, an AI-native software engineer and mobile application developer specializing in Flutter, React Native, and Supabase."
+        title="Aman Yadav | Mobile & AI-Native Developer"
+        description="Aman Yadav is a mobile app developer and AI-native engineer specializing in Flutter, React Native, and Supabase."
         canonical="/"
         jsonLd={{
           "@context": "https://schema.org",
