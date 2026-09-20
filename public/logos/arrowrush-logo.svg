@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <defs>
+    <!-- Metallic Hammer Head Gradient -->
+    <linearGradient id="hammerMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0" />
+      <stop offset="35%" stop-color="#94A3B8" />
+      <stop offset="70%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <!-- Handle Wooden Gradient -->
+    <linearGradient id="handleWood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706" />
+      <stop offset="50%" stop-color="#B45309" />
+      <stop offset="100%" stop-color="#78350F" />
+    </linearGradient>
+    <!-- Strike Power Glow -->
+    <radialGradient id="smashGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Impact Sparks FX -->
+  <circle cx="16" cy="18" r="8" fill="url(#smashGlow)" opacity="0.6" />
+  <path d="M10 14 L4 10 M14 8 L12 2 M6 20 L2 22" stroke="#FBBF24" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Wooden Grip Handle -->
+  <path d="M26 30 L52 56" stroke="url(#handleWood)" stroke-width="8" stroke-linecap="round" />
+  <!-- Leather Grip Wrap Lines -->
+  <line x1="33" y1="35" x2="37" y2="39" stroke="#451A03" stroke-width="2" stroke-linecap="round" />
+  <line x1="41" y1="43" x2="45" y2="47" stroke="#451A03" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Pommel / Handle Base -->
+  <circle cx="53" cy="57" r="4.5" fill="#F59E0B" stroke="#B45309" stroke-width="1.5" />
+
+  <!-- Heavy Steel Hammer Head -->
+  <rect x="14" y="14" width="24" height="15" rx="3.5" fill="url(#hammerMetal)" stroke="#0F172A" stroke-width="2" transform="rotate(-45 26 21.5)" />
+
+  <!-- Hammer Bevel Highlight -->
+  <line x1="16" y1="17" x2="31" y2="32" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.6" />
+
+  <!-- Face Plate Reinforcement -->
+  <polygon points="12,23 16,19 23,26 19,30" fill="#F59E0B" stroke="#B45309" stroke-width="1" />
+</svg>

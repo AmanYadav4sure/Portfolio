@@ -25,7 +25,7 @@ export const projects: Project[] = [
     category: 'Game Development',
     technologies: ['3D', 'Web Game', 'JavaScript'],
     year: '2026',
-    image: '/mascots/smash-ground-3d.svg',
+    image: '/logos/smash-ground-3d.svg',
     liveUrl: 'https://www.blocksmash3d.site/',
   },
 
@@ -37,7 +37,7 @@ export const projects: Project[] = [
     category: 'Web Development',
     technologies: ['React', 'Streaming API'],
     year: '2026',
-    image: '/mascots/cinemavortex.svg',
+    image: '/logos/cinemavortex-logo.svg',
     liveUrl: 'https://www.cinemavortex.site/',
   },
 
@@ -73,7 +73,7 @@ export const projects: Project[] = [
     category: 'Web Tool',
     technologies: ['JavaScript', 'QR Code API'],
     year: '2026',
-    image: '/mascots/qr-maker.svg',
+    image: '/logos/qrmaker-logo.png',
     liveUrl: 'https://www.qrmaker.tech/',
   },
 
@@ -85,7 +85,7 @@ export const projects: Project[] = [
     category: 'Web Development',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     year: '2026',
-    image: '/mascots/vanya-cafe.svg',
+    image: '/logos/vanya-cafe-logo.jpg',
     liveUrl: 'https://vanyacafe.vercel.app/',
   },
 
@@ -97,7 +97,7 @@ export const projects: Project[] = [
     category: 'Game Development',
     technologies: ['Kotlin', 'Android'],
     year: '2026',
-    image: '/mascots/arrow-rush.svg',
+    image: '/logos/arrowrush-logo.svg',
     liveUrl: 'https://arrowrusher.vercel.app/',
   },
 ];
