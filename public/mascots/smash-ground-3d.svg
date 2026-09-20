@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Smash Ground 3D mascot">
+  <!-- speed lines -->
+  <g stroke="#2b2140" stroke-width="20" stroke-linecap="round" opacity="0.3">
+    <line x1="58" y1="150" x2="138" y2="150"/>
+    <line x1="374" y1="150" x2="454" y2="150"/>
+    <line x1="82" y1="212" x2="132" y2="212"/>
+    <line x1="380" y1="212" x2="430" y2="212"/>
+  </g>
+
+  <!-- smash ball -->
+  <circle cx="256" cy="196" r="108" fill="#ff5a2e" stroke="#2b2140" stroke-width="26"/>
+  <ellipse cx="216" cy="146" rx="32" ry="18" fill="#ffffff" opacity="0.55" transform="rotate(-28 216 146)"/>
+
+  <!-- determined face -->
+  <g stroke="#2b2140" stroke-width="18" stroke-linecap="round">
+    <line x1="194" y1="164" x2="232" y2="180"/>
+    <line x1="318" y1="164" x2="280" y2="180"/>
+  </g>
+  <circle cx="222" cy="214" r="14" fill="#2b2140"/>
+  <circle cx="290" cy="214" r="14" fill="#2b2140"/>
+  <path d="M226 246 Q256 270 286 246" stroke="#2b2140" stroke-width="18" fill="none" stroke-linecap="round"/>
+
+  <!-- impact sparks -->
+  <g stroke="#2b2140" stroke-width="14" stroke-linecap="round">
+    <line x1="256" y1="330" x2="256" y2="354"/>
+    <line x1="214" y1="322" x2="226" y2="344"/>
+    <line x1="298" y1="322" x2="286" y2="344"/>
+  </g>
+
+  <!-- cracked helix ring -->
+  <path d="M112 412 Q176 344 244 402" stroke="#7c5cff" stroke-width="30" fill="none" stroke-linecap="round"/>
+  <path d="M268 402 Q336 344 400 412" stroke="#35c7e8" stroke-width="30" fill="none" stroke-linecap="round"/>
+  <g fill="#2b2140">
+    <rect x="236" y="418" width="16" height="28" rx="7" transform="rotate(-16 244 432)"/>
+    <rect x="262" y="418" width="16" height="28" rx="7" transform="rotate(16 270 432)"/>
+  </g>
+</svg>

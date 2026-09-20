@@ -25,8 +25,7 @@ export const projects: Project[] = [
     category: 'Game Development',
     technologies: ['3D', 'Web Game', 'JavaScript'],
     year: '2026',
-    image:
-      'https://images.unsplash.com/photo-1552820728-8b83bb6b773f?q=80&w=1200&auto=format&fit=crop',
+    image: '/mascots/smash-ground-3d.svg',
     liveUrl: 'https://www.blocksmash3d.site/',
   },
 
@@ -38,8 +37,7 @@ export const projects: Project[] = [
     category: 'Web Development',
     technologies: ['React', 'Streaming API'],
     year: '2026',
-    image:
-      'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1200&auto=format&fit=crop',
+    image: '/mascots/cinemavortex.svg',
     liveUrl: 'https://www.cinemavortex.site/',
   },
 
@@ -51,8 +49,7 @@ export const projects: Project[] = [
     category: 'AI / SaaS',
     technologies: ['AI', 'React', 'TypeScript'],
     year: '2026',
-    image:
-      'https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1200&auto=format&fit=crop',
+    image: '/capgen-logo.png',
     liveUrl: 'https://capgen.app',
   },
 
@@ -64,8 +61,7 @@ export const projects: Project[] = [
     category: 'Mobile App',
     technologies: ['Kotlin', 'Android', 'TTS'],
     year: '2026',
-    image:
-      'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1200&auto=format&fit=crop',
+    image: '/yappdf-logo.png',
     liveUrl: 'https://yappdf.app',
   },
 
@@ -77,8 +73,7 @@ export const projects: Project[] = [
     category: 'Web Tool',
     technologies: ['JavaScript', 'QR Code API'],
     year: '2026',
-    image:
-      'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1200&auto=format&fit=crop',
+    image: '/mascots/qr-maker.svg',
     liveUrl: 'https://www.qrmaker.tech/',
   },
 
@@ -90,8 +85,7 @@ export const projects: Project[] = [
     category: 'Web Development',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     year: '2026',
-    image:
-      'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2998760/e4f4796aa2bcad5c6c79cf241884cd70026a925b/capsule_616x353.jpg?t=1779264320',
+    image: '/mascots/vanya-cafe.svg',
     liveUrl: 'https://vanyacafe.vercel.app/',
   },
 
@@ -103,8 +97,7 @@ export const projects: Project[] = [
     category: 'Game Development',
     technologies: ['Kotlin', 'Android'],
     year: '2026',
-    image:
-      'https://play-lh.googleusercontent.com/NtEo137AeSWFZF6y60WCCdJTvGzRzZOWBoB_bswx8go2Af3P2atBZZRNemAcKZ49slrxjlY1nlY_WKyHkKVs',
+    image: '/mascots/arrow-rush.svg',
     liveUrl: 'https://arrowrusher.vercel.app/',
   },
 ];

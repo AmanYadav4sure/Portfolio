@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="QR Maker mascot">
+  <!-- chip body -->
+  <rect x="56" y="56" width="400" height="400" rx="84" fill="#ede7ff" stroke="#2b2140" stroke-width="28"/>
+
+  <!-- finder squares -->
+  <g stroke="#2b2140" stroke-width="24" fill="none">
+    <rect x="118" y="118" width="90" height="90" rx="20"/>
+    <rect x="304" y="118" width="90" height="90" rx="20"/>
+    <rect x="118" y="304" width="90" height="90" rx="20"/>
+  </g>
+  <g fill="#7c5cff">
+    <rect x="146" y="146" width="34" height="34" rx="9"/>
+    <rect x="332" y="146" width="34" height="34" rx="9"/>
+    <rect x="146" y="332" width="34" height="34" rx="9"/>
+  </g>
+
+  <!-- scan beam -->
+  <rect x="94" y="240" width="324" height="14" rx="7" fill="#35c7e8"/>
+
+  <!-- face -->
+  <g fill="#2b2140">
+    <circle cx="298" cy="322" r="16"/>
+    <circle cx="382" cy="322" r="16"/>
+  </g>
+  <path d="M302 368 Q340 402 378 368" stroke="#2b2140" stroke-width="22" fill="none" stroke-linecap="round"/>
+  <circle cx="266" cy="372" r="11" fill="#ffb4a2"/>
+
+  <!-- sparkle -->
+  <path d="M428 288 l10 22 22 10 -22 10 -10 22 -10 -22 -22 -10 22 -10 Z" fill="#ffcf4d" stroke="#2b2140" stroke-width="10" stroke-linejoin="round"/>
+</svg>
