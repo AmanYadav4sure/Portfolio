@@ -1,44 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Arrow Rush — animated arrow-hit tile in the game's own palette -->
   <defs>
-    <!-- Metallic Hammer Head Gradient -->
-    <linearGradient id="hammerMetal" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#E2E8F0" />
-      <stop offset="35%" stop-color="#94A3B8" />
-      <stop offset="70%" stop-color="#475569" />
-      <stop offset="100%" stop-color="#1E293B" />
-    </linearGradient>
-    <!-- Handle Wooden Gradient -->
-    <linearGradient id="handleWood" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#D97706" />
-      <stop offset="50%" stop-color="#B45309" />
-      <stop offset="100%" stop-color="#78350F" />
-    </linearGradient>
-    <!-- Strike Power Glow -->
-    <radialGradient id="smashGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#FDE047" />
-      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0" />
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8CE94C" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#8CE94C" stop-opacity="0"/>
     </radialGradient>
   </defs>
 
-  <!-- Impact Sparks FX -->
-  <circle cx="16" cy="18" r="8" fill="url(#smashGlow)" opacity="0.6" />
-  <path d="M10 14 L4 10 M14 8 L12 2 M6 20 L2 22" stroke="#FBBF24" stroke-width="2" stroke-linecap="round" />
+  <rect width="512" height="512" rx="110" fill="#F5F8F2"/>
+  <circle cx="336" cy="256" r="170" fill="url(#glow)"/>
 
-  <!-- Wooden Grip Handle -->
-  <path d="M26 30 L52 56" stroke="url(#handleWood)" stroke-width="8" stroke-linecap="round" />
-  <!-- Leather Grip Wrap Lines -->
-  <line x1="33" y1="35" x2="37" y2="39" stroke="#451A03" stroke-width="2" stroke-linecap="round" />
-  <line x1="41" y1="43" x2="45" y2="47" stroke="#451A03" stroke-width="2" stroke-linecap="round" />
+  <!-- speed lines -->
+  <g stroke="#1A4B00" stroke-width="12" stroke-linecap="round">
+    <line x1="48" y1="196" x2="98" y2="196">
+      <animate attributeName="opacity" values="0.15;0.7;0.15" dur="0.9s" repeatCount="indefinite"/>
+    </line>
+    <line x1="64" y1="320" x2="104" y2="320">
+      <animate attributeName="opacity" values="0.7;0.15;0.7" dur="0.9s" repeatCount="indefinite"/>
+    </line>
+  </g>
 
-  <!-- Pommel / Handle Base -->
-  <circle cx="53" cy="57" r="4.5" fill="#F59E0B" stroke="#B45309" stroke-width="1.5" />
+  <!-- target -->
+  <circle cx="336" cy="256" r="112" fill="#8CE94C" stroke="#1A1C19" stroke-width="10"/>
+  <circle cx="336" cy="256" r="82" fill="#F5F8F2" stroke="#1A1C19" stroke-width="8"/>
+  <circle cx="336" cy="256" r="56" fill="#FFD12F" stroke="#1A1C19" stroke-width="8"/>
+  <circle cx="336" cy="256" r="30" fill="#FF6B35" stroke="#1A1C19" stroke-width="8"/>
+  <circle cx="336" cy="256" r="10" fill="#1A1C19"/>
 
-  <!-- Heavy Steel Hammer Head -->
-  <rect x="14" y="14" width="24" height="15" rx="3.5" fill="url(#hammerMetal)" stroke="#0F172A" stroke-width="2" transform="rotate(-45 26 21.5)" />
+  <!-- touch ripples -->
+  <circle cx="336" cy="256" r="14" fill="none" stroke="#FF6B35" stroke-width="10">
+    <animate attributeName="r" values="20;150" dur="1.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.9;0" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="336" cy="256" r="14" fill="none" stroke="#8CE94C" stroke-width="10">
+    <animate attributeName="r" values="20;150" dur="1.8s" begin="-0.9s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.9;0" dur="1.8s" begin="-0.9s" repeatCount="indefinite"/>
+  </circle>
 
-  <!-- Hammer Bevel Highlight -->
-  <line x1="16" y1="17" x2="31" y2="32" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.6" />
+  <!-- arrow (recoils on each hit) -->
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0; -12 0; 3 0; 0 0; 0 0"
+      keyTimes="0; 0.12; 0.2; 0.3; 1"
+      dur="1.8s" repeatCount="indefinite"/>
 
-  <!-- Face Plate Reinforcement -->
-  <polygon points="12,23 16,19 23,26 19,30" fill="#F59E0B" stroke="#B45309" stroke-width="1" />
+    <rect x="104" y="247" width="214" height="18" rx="9" fill="#FFD12F" stroke="#1A1C19" stroke-width="8"/>
+    <path d="M316 230 L362 256 L316 282 Z" fill="#8CE94C" stroke="#1A1C19" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M112 247 L64 226 L58 248 Z" fill="#FF6B35" stroke="#1A1C19" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M112 265 L64 286 L58 264 Z" fill="#8CE94C" stroke="#1A1C19" stroke-width="8" stroke-linejoin="round"/>
+  </g>
+
+  <!-- impact sparks -->
+  <g stroke="#FF6B35" stroke-width="10" stroke-linecap="round">
+    <line x1="382" y1="216" x2="398" y2="200">
+      <animate attributeName="opacity" values="1;0;1;0" keyTimes="0;0.1;0.5;0.6" dur="1.8s" repeatCount="indefinite"/>
+    </line>
+    <line x1="386" y1="296" x2="402" y2="312">
+      <animate attributeName="opacity" values="0;1;0;1" keyTimes="0;0.1;0.5;0.6" dur="1.8s" repeatCount="indefinite"/>
+    </line>
+  </g>
 </svg>
