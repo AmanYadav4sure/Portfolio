@@ -73,7 +73,7 @@ export const Navbar = () => {
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="navbar-logo">
           <button onClick={() => handleNavClick('/')} style={{cursor: 'none'}}>
-            <span className="logo-text">AMAN YADAV</span>
+            <span className="logo-text">Aman Yadav</span>
           </button>
         </div>
 

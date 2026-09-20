@@ -227,7 +227,7 @@ export default function Projects() {
         </span>
 
         <h1 className="projects-header-title">
-          WHAT I'VE BUILT
+          What I've built
         </h1>
 
         <p className="projects-subtitle">

@@ -46,8 +46,8 @@ export default function Contact() {
       />
       <div className="contact-content">
         <h1 className="contact-title">
-          <div className="overflow-hidden"><span>LET'S BUILD</span></div>
-          <div className="overflow-hidden"><span className="text-accent">SOMETHING.</span></div>
+          <div className="overflow-hidden"><span>Let's build</span></div>
+          <div className="overflow-hidden"><span className="text-accent">something.</span></div>
         </h1>
 
         <div className="contact-grid">
@@ -71,7 +71,7 @@ export default function Contact() {
             <div className="contact-item">
               <span className="contact-label mono">LOCATION</span>
               <div className="contact-link" style={{ pointerEvents: 'none' }}>
-                <span className="link-text">JANAKPUR, NEPAL</span>
+                <span className="link-text">Janakpur, Nepal</span>
               </div>
             </div>
           </div>
@@ -99,9 +99,9 @@ export default function Contact() {
                 disabled={formStatus !== 'idle'}
                 data-cursor-interact="true"
               >
-                {formStatus === 'idle' && <>SEND MESSAGE <ArrowRight size={18} /></>}
-                {formStatus === 'submitting' && 'SENDING...'}
-                {formStatus === 'success' && 'MESSAGE SENT'}
+                {formStatus === 'idle' && <>Send message <ArrowRight size={18} /></>}
+                {formStatus === 'submitting' && 'Sending...'}
+                {formStatus === 'success' && 'Message sent'}
               </button>
             </form>
           </div>

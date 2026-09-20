@@ -45,7 +45,7 @@ export default function Home() {
       });
 
       // Role Typing Effect
-      const roles = ["MOBILE APP DEVELOPER", "AI-NATIVE ENGINEER", "FLUTTER DEVELOPER", "REACT NATIVE DEVELOPER"];
+      const roles = ["Mobile App Developer", "AI-Native Engineer", "Flutter Developer", "React Native Developer"];
       let roleIndex = 0;
       const roleElement = document.querySelector('.typing-role');
       
@@ -144,33 +144,33 @@ export default function Home() {
       <section className="hero-section container">
         <div className="hero-layout">
           <div className="hero-content">
-            <p className="hero-greeting mono text-accent">HELLO, I'M</p>
+            <p className="hero-greeting mono text-accent">Hello, I'm</p>
             <h1 className="hero-title">
-              <div className="overflow-hidden"><span>AMAN</span></div>
-              <div className="overflow-hidden"><span>YADAV</span></div>
+              <div className="overflow-hidden"><span>Aman</span></div>
+              <div className="overflow-hidden"><span>Yadav</span></div>
             </h1>
             
             <div className="hero-roles mono">
-              <span className="typing-role">MOBILE APP DEVELOPER</span>
+              <span className="typing-role">Mobile App Developer</span>
             </div>
 
             <h2 className="hero-statement">
-              I BUILD DIGITAL EXPERIENCES<br/>
-              AND EXPLORE HOW TO KEEP<br/>
-              THEM SECURE.
+              I build digital experiences<br/>
+              and explore how to keep<br/>
+              them secure.
             </h2>
 
             <div className="hero-ctas">
               <MagneticButton className="btn-primary" onClick={() => handleNavClick('/projects')}>
-                EXPLORE MY WORK <ArrowRight size={20} />
+                Explore my work <ArrowRight size={20} />
               </MagneticButton>
               <MagneticButton className="btn-secondary" onClick={() => handleNavClick('/contact')}>
-                CONTACT ME ↗
+                Contact me ↗
               </MagneticButton>
             </div>
 
             <div className="hero-status mono">
-              <span className="status-dot"></span> AVAILABLE FOR PROJECTS / COLLABORATION
+              <span className="status-dot"></span> Available for projects / collaboration
             </div>
           </div>
           <div className="hero-image-container">
@@ -181,7 +181,7 @@ export default function Home() {
 
       <section className="featured-projects-section container reveal-section">
         <span className="section-label">SELECTED WORK</span>
-        <h2 className="section-title">RECENT PROJECTS</h2>
+        <h2 className="section-title">Recent projects</h2>
         <div className="featured-projects-grid">
           {projects.slice(0, 4).map((project) => (
             <div 
@@ -205,14 +205,14 @@ export default function Home() {
         </div>
         <div className="view-all-container">
           <MagneticButton className="btn-primary" onClick={() => handleNavClick('/projects')}>
-            VIEW ALL PROJECTS <ArrowRight size={20} />
+            View all projects <ArrowRight size={20} />
           </MagneticButton>
         </div>
       </section>
 
       <section id="about" className="about-section container reveal-section">
         <span className="section-label">ABOUT ME</span>
-        <h2 className="section-title">WHO IS AMAN YADAV?</h2>
+        <h2 className="section-title">Who is Aman Yadav?</h2>
         <div className="about-grid">
           <div className="about-text-content">
             <p><strong>Hi, I'm Aman Yadav! I'm an AI-native software engineer and mobile application developer based in Janakpur, Nepal.</strong></p>
@@ -225,8 +225,8 @@ export default function Home() {
               <span className="timeline-dot"></span>
               <div className="timeline-content">
                 <span className="mono text-accent">CURRENT</span>
-                <h4>DEVELOPER</h4>
-                <p>MOBILE DEVELOPMENT / AI ENGINEERING / SUPABASE</p>
+                <h4>Developer</h4>
+                <p>Mobile Development / AI Engineering / Supabase</p>
               </div>
             </div>
           </div>
@@ -238,9 +238,9 @@ export default function Home() {
         <span className="section-label">WHAT I DO</span>
         <div className="services-list">
           {[
-            { id: '01', title: 'MOBILE APP DEVELOPMENT', desc: 'High-performance cross-platform applications using Flutter, Dart, and React Native.' },
-            { id: '02', title: 'AI INTEGRATION', desc: 'Integrating generative AI capabilities and intelligence into modern software architectures.' },
-            { id: '03', title: 'CLOUD BACKENDS', desc: 'Architecting scalable serverless databases and authentication using Supabase and Firebase.' }
+            { id: '01', title: 'Mobile App Development', desc: 'High-performance cross-platform applications using Flutter, Dart, and React Native.' },
+            { id: '02', title: 'AI Integration', desc: 'Integrating generative AI capabilities and intelligence into modern software architectures.' },
+            { id: '03', title: 'Cloud Backends', desc: 'Architecting scalable serverless databases and authentication using Supabase and Firebase.' }
           ].map((service) => (
             <div className="service-card glass-panel" key={service.id} data-cursor-interact="true">
               <span className="service-number mono text-accent">{service.id}</span>
@@ -257,7 +257,7 @@ export default function Home() {
       
       <section id="skills" className="skills-section container reveal-section">
         <span className="section-label">TECHNICAL SKILLS</span>
-        <h2 className="section-title">WHAT I KNOW</h2>
+        <h2 className="section-title">What I know</h2>
         
         <div className="skills-container glass-panel">
           <div className="skills-tabs">
@@ -268,11 +268,11 @@ export default function Home() {
           
           <div className="skills-list">
             {[
-              { name: 'FLUTTER', category: 'MOBILE' },
-              { name: 'DART', category: 'LANGUAGE / MOBILE' },
-              { name: 'REACT NATIVE', category: 'MOBILE' },
-              { name: 'SUPABASE', category: 'CLOUD / BACKEND' },
-              { name: 'GENERATIVE AI', category: 'AI / ENGINEERING' }
+              { name: 'Flutter', category: 'Mobile' },
+              { name: 'Dart', category: 'Language / Mobile' },
+              { name: 'React Native', category: 'Mobile' },
+              { name: 'Supabase', category: 'Cloud / Backend' },
+              { name: 'Generative AI', category: 'AI / Engineering' }
             ].map((skill, index) => (
               <div key={index} className="skill-row" data-cursor-interact="true">
                 <span className="skill-name">{skill.name}</span>
@@ -286,18 +286,18 @@ export default function Home() {
       
       <section className="security-section container reveal-section">
         <span className="section-label">AI-NATIVE MINDSET</span>
-        <h2 className="section-title">ENGINEERING PHILOSOPHY</h2>
+        <h2 className="section-title">Engineering philosophy</h2>
         <div className="security-grid">
           <div className="security-card glass-panel">
-            <h4 className="mono text-accent">AI-FIRST ARCHITECTURE</h4>
+            <h4 className="mono text-accent">AI-First Architecture</h4>
             <p>Integrating Generative AI and LLMs directly into application workflows for intelligent user experiences.</p>
           </div>
           <div className="security-card glass-panel">
-            <h4 className="mono text-accent">MOBILE PERFORMANCE</h4>
+            <h4 className="mono text-accent">Mobile Performance</h4>
             <p>Optimizing Flutter and React Native rendering pipelines for smooth, native-like 60fps animations.</p>
           </div>
           <div className="security-card glass-panel">
-            <h4 className="mono text-accent">SCALABLE CLOUD</h4>
+            <h4 className="mono text-accent">Scalable Cloud</h4>
             <p>Building resilient, secure, and serverless backend infrastructures with Supabase and Firebase.</p>
           </div>
         </div>
@@ -323,16 +323,16 @@ export default function Home() {
       <footer className="footer container">
         <div className="footer-content">
           <div className="footer-brand">
-            <h3>AMAN YADAV</h3>
-            <p className="mono">MOBILE APP DEVELOPER / AI-NATIVE SOFTWARE ENGINEER</p>
+            <h3>Aman Yadav</h3>
+            <p className="mono">Mobile App Developer / AI-Native Software Engineer</p>
             <p className="mono" style={{marginTop: '1rem', color: 'var(--text-muted)'}}>
               Janakpurdham, Dhanusha, Nepal<br/>
               +977 9764495684
             </p>
           </div>
           <div className="footer-meta mono">
-            <span>JANAKPUR / NEPAL</span>
-            <span>© 2026 AMAN YADAV</span>
+            <span>Janakpur / Nepal</span>
+            <span>© 2026 Aman Yadav</span>
           </div>
         </div>
         {/* #DevAmanyadav */}
