@@ -1,17 +1,25 @@
-# Aman Yadav - Web & App Developer Portfolio
+# Aman Yadav — Mobile & AI-Native Developer
 
-Aman Yadav is a Grade 10 student and self-taught developer from Janakpur, Nepal. He is passionate about building modern web applications, Android apps (using Kotlin), and exploring cyber security.
+Aman Yadav is a mobile application developer and AI-native software engineer from Janakpur, Nepal, and the owner of amanyadav.site. He builds high-performance cross-platform mobile applications and integrates generative AI directly into software architectures.
 
-## Key Skills
-- Web Development (React, TypeScript, HTML/CSS, JavaScript)
-- App Development (Android, Kotlin)
-- Cyber Security (Defensive security, web security)
+## Skills
+- Mobile: Flutter, Dart, React Native, Kotlin
+- AI: Generative AI, LLM integration, AI-first architecture
+- Cloud: Supabase, Firebase, serverless backends
+- Web: React, TypeScript, JavaScript, HTML/CSS
 
 ## Projects
-- Various full-stack web and mobile applications focusing on performance and UI/UX.
+- Capgen — AI video caption generator for Reels, Shorts & TikTok: https://capgen.app
+- YapPDF — offline PDF voice reader for Android: https://yappdf.app
+- QR Maker — custom QR code generator with logos and frames: https://www.qrmaker.tech
+- Smash Ground 3D — 3D helix-stack smashing arcade game: https://www.blocksmash3d.site
+- CinemaVortex — free HD streaming platform: https://www.cinemavortex.site
+- Vanya Cafe — gaming cafe website: https://vanyacafe.vercel.app
+- Arrow Rush — fast-paced mobile game: https://arrowrusher.vercel.app
 
 ## Contact
+- Website: https://amanyadav.site
+- Email: Dev.Amanmain1@gmail.com
 - GitHub: https://github.com/AmanYadav4sure
 - LinkedIn: https://www.linkedin.com/in/aman-yadav-5119433b6/
 - Instagram: https://www.instagram.com/dev.amanyadav/
-

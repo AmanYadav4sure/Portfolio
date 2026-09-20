@@ -16,6 +16,7 @@
 
   --font-primary: 'Montserrat', system-ui, sans-serif;
   --font-secondary: 'Montserrat', system-ui, sans-serif;
+  --font-display: 'Space Grotesk', 'Montserrat', system-ui, sans-serif;
   --font-serif: 'Playfair Display', serif;
 }
 
@@ -77,7 +78,8 @@ a, button {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.1;
-  font-family: var(--font-primary);
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
 }
 
 .mono {

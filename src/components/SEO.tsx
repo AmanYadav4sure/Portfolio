@@ -9,7 +9,8 @@ interface SEOProps {
   jsonLd?: Record<string, any> | Record<string, any>[];
 }
 
-const siteUrl = import.meta.env.VITE_SITE_URL || 'https://amanyadav.site';
+// Canonical production domain — constant so deployed canonical URLs never drift
+const siteUrl = 'https://amanyadav.site';
 
 export const SEO = ({
   title,
