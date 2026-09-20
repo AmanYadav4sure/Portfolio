@@ -47,7 +47,7 @@ export default function Contact() {
       <div className="contact-content">
         <h1 className="contact-title">
           <div className="overflow-hidden"><span>Let's build</span></div>
-          <div className="overflow-hidden"><span className="text-accent">something.</span></div>
+          <div className="overflow-hidden"><span className="font-accent text-accent">something.</span></div>
         </h1>
 
         <div className="contact-grid">

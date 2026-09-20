@@ -17,7 +17,8 @@
   --font-primary: 'Montserrat', system-ui, sans-serif;
   --font-secondary: 'Montserrat', system-ui, sans-serif;
   --font-display: 'Space Grotesk', 'Montserrat', system-ui, sans-serif;
-  --font-serif: 'Playfair Display', serif;
+  --font-accent: 'Instrument Serif', Georgia, serif;
+  --font-serif: 'Instrument Serif', Georgia, serif;
 }
 
 * {
@@ -85,6 +86,15 @@ h1, h2, h3, h4, h5, h6 {
 .mono {
   font-family: var(--font-secondary);
   font-size: 1.2rem;
+}
+
+/* Serif italic accent for highlighted words inside big headings */
+.font-accent {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.06em;
+  letter-spacing: 0;
 }
 
 .text-accent {

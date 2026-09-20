@@ -10,7 +10,7 @@ Personal portfolio of **Aman Yadav**, a mobile & AI-native developer from Janakp
 - **GSAP** + **Lenis** for animation and smooth scrolling
 - **Three.js** for the interactive particle background
 - **react-helmet-async** for per-page SEO meta
-- **Montserrat / Space Grotesk / DM Mono** typography
+- **Space Grotesk / Montserrat / Instrument Serif / DM Mono** typography
 
 ## Getting started
 

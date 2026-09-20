@@ -155,7 +155,7 @@ export default function Home() {
             </div>
 
             <h2 className="hero-statement">
-              I build digital experiences<br/>
+              I build <span className="font-accent">digital experiences</span><br/>
               and explore how to keep<br/>
               them secure.
             </h2>
@@ -212,7 +212,7 @@ export default function Home() {
 
       <section id="about" className="about-section container reveal-section">
         <span className="section-label">ABOUT ME</span>
-        <h2 className="section-title">Who is Aman Yadav?</h2>
+        <h2 className="section-title">Who is <span className="font-accent">Aman Yadav</span>?</h2>
         <div className="about-grid">
           <div className="about-text-content">
             <p><strong>Hi, I'm Aman Yadav! I'm an AI-native software engineer and mobile application developer based in Janakpur, Nepal.</strong></p>
