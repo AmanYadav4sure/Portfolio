@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- YapPDF — faithful logo recreation, animated -->
+  <defs>
+    <clipPath id="ypBody">
+      <path d="M96 168 Q96 120 144 120 H300 L404 224 V400 Q404 448 356 448 H144 Q96 448 96 400 Z"/>
+    </clipPath>
+  </defs>
+
+  <g>
+    <!-- gentle bob -->
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -7; 0 0" dur="3.4s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" keyTimes="0;0.5;1"/>
+
+    <!-- headphone band: dark outer + purple inner, drawn first so PDF covers the lower arc -->
+    <path d="M96 300 A160 160 0 0 1 416 300" fill="none" stroke="#2B2140" stroke-width="46" stroke-linecap="round"/>
+    <path d="M96 300 A160 160 0 0 1 416 300" fill="none" stroke="#7C4DFF" stroke-width="26" stroke-linecap="round"/>
+
+    <!-- ear cups: big dark rounded squares with white bars -->
+    <rect x="24" y="212" width="88" height="164" rx="40" fill="#2B2140"/>
+    <rect x="400" y="212" width="88" height="164" rx="40" fill="#2B2140"/>
+    <rect x="48" y="244" width="40" height="104" rx="20" fill="#FFFFFF"/>
+    <rect x="424" y="244" width="40" height="104" rx="20" fill="#FFFFFF"/>
+
+    <!-- PDF body -->
+    <path d="M96 168 Q96 120 144 120 H300 L404 224 V400 Q404 448 356 448 H144 Q96 448 96 400 Z" fill="#F4470B" stroke="#2B2140" stroke-width="24" stroke-linejoin="round"/>
+    <!-- folded corner -->
+    <path d="M300 120 L300 224 L404 224 Z" fill="#FF7A50" stroke="#2B2140" stroke-width="24" stroke-linejoin="round"/>
+
+    <!-- face -->
+    <circle cx="192" cy="288" r="17" fill="#2B2140"/>
+    <circle cx="304" cy="288" r="17" fill="#2B2140"/>
+    <!-- blink overlay -->
+    <g>
+      <animate attributeName="opacity" values="1;1;0;1;1" keyTimes="0;0.44;0.47;0.5;1" dur="4.6s" repeatCount="indefinite"/>
+      <rect x="172" y="284" width="40" height="9" rx="4.5" fill="#2B2140"/>
+      <rect x="284" y="284" width="40" height="9" rx="4.5" fill="#2B2140"/>
+    </g>
+
+    <!-- big open smile with tongue -->
+    <path d="M186 328 Q248 392 310 328 Q248 348 186 328 Z" fill="#2B2140"/>
+    <ellipse cx="248" cy="352" rx="30" ry="17" fill="#FF8A65"/>
+
+    <!-- chin mark -->
+    <path d="M242 396 q6 12 -6 20" stroke="#2B2140" stroke-width="10" fill="none" stroke-linecap="round"/>
+
+    <!-- sound waves (white, right of face) -->
+    <g fill="none" stroke="#FFFFFF" stroke-width="15" stroke-linecap="round">
+      <path d="M336 296 A34 34 0 0 1 336 330">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="1.15s" repeatCount="indefinite"/>
+      </path>
+      <path d="M362 278 A64 64 0 0 1 362 348">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="1.15s" begin="-0.38s" repeatCount="indefinite"/>
+      </path>
+      <path d="M388 260 A96 96 0 0 1 388 366">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="1.15s" begin="-0.77s" repeatCount="indefinite"/>
+      </path>
+      <path d="M414 242 A128 128 0 0 1 414 384">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="1.15s" begin="-1.15s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+</svg>

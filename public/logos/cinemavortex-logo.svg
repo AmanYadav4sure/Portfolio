@@ -1,25 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
   <defs>
     <linearGradient id="favGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#8b5cf6" />
-      <stop offset="50%" stop-color="#ec4899" />
-      <stop offset="100%" stop-color="#f59e0b" />
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="50%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
     </linearGradient>
     <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#1e1b4b" />
-      <stop offset="100%" stop-color="#090a0f" />
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#090a0f"/>
     </radialGradient>
   </defs>
 
-  <!-- Dark Background Rounded Tile -->
-  <rect width="64" height="64" rx="16" fill="url(#bgGlow)" stroke="#272838" stroke-width="1.5" />
+  <rect width="64" height="64" rx="16" fill="url(#bgGlow)" stroke="#272838" stroke-width="1.5"/>
 
-  <!-- Outer Film Strip Orbit Ring -->
-  <circle cx="32" cy="32" r="21" stroke="url(#favGrad)" stroke-width="3" stroke-dasharray="6 3.5" stroke-linecap="round" />
+  <!-- orbiting film strip -->
+  <circle cx="32" cy="32" r="21" stroke="url(#favGrad)" stroke-width="3" stroke-dasharray="6 3.5" stroke-linecap="round">
+    <animateTransform attributeName="transform" type="rotate" from="0 32 32" to="360 32 32" dur="9s" repeatCount="indefinite"/>
+  </circle>
 
-  <!-- Inner Cinema Shutter Core -->
-  <circle cx="32" cy="32" r="14" fill="#0f0f13" stroke="#2c2c3d" stroke-width="1" />
+  <circle cx="32" cy="32" r="14" fill="#0f0f13" stroke="#2c2c3d" stroke-width="1"/>
 
-  <!-- Dynamic Play / Vortex Glyph -->
-  <path d="M28 23L41 32L28 41V23Z" fill="url(#favGrad)" />
+  <!-- play / vortex glyph with gentle glow pulse -->
+  <path d="M28 23L41 32L28 41V23Z" fill="url(#favGrad)">
+    <animate attributeName="opacity" values="1;0.72;1" dur="2.6s" repeatCount="indefinite"/>
+  </path>
 </svg>

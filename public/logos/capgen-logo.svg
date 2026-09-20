@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Capgen — exact logo recreation with neon pulse, sheen sweep and EQ dashes -->
+  <defs>
+    <linearGradient id="cgTile" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0" stop-color="#F6F9FF"/>
+      <stop offset="0.55" stop-color="#DDE8FB"/>
+      <stop offset="1" stop-color="#BCCDED"/>
+    </linearGradient>
+    <linearGradient id="cgSheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="cgBlur" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <filter id="cgShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#7E9BE0" flood-opacity="0.5"/>
+    </filter>
+    <clipPath id="cgClip"><rect x="20" y="20" width="472" height="472" rx="112"/></clipPath>
+  </defs>
+
+  <!-- glossy tile -->
+  <g filter="url(#cgShadow)">
+    <rect x="20" y="20" width="472" height="472" rx="112" fill="url(#cgTile)"/>
+  </g>
+  <g clip-path="url(#cgClip)">
+    <rect x="20" y="20" width="472" height="252" fill="#ffffff" opacity="0.5"/>
+    <rect x="-250" y="-80" width="190" height="700" fill="url(#cgSheen)" transform="rotate(18 256 256)">
+      <animate attributeName="x" values="-250;600" dur="5.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- brackets -->
+  <g fill="none" stroke="#E9F1FE" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <path d="M196 162 H172 Q148 162 148 186 V330 Q148 354 172 354 H196"/>
+    <path d="M316 162 H340 Q364 162 364 186 V330 Q364 354 340 354 H316"/>
+  </g>
+
+  <!-- neon C -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M305.4 187.6 A86 86 0 1 0 305.4 328.4" stroke="#2E9BFF" stroke-width="46" filter="url(#cgBlur)">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M305.4 187.6 A86 86 0 1 0 305.4 328.4" stroke="#1E88FF" stroke-width="34"/>
+    <path d="M305.4 187.6 A86 86 0 1 0 305.4 328.4" stroke="#DCEBFF" stroke-width="10"/>
+  </g>
+
+  <!-- EQ dashes -->
+  <g stroke="#29B6FF" stroke-width="7" stroke-linecap="round">
+    <line x1="214" y1="381" x2="214" y2="391"><animate attributeName="opacity" values="0.25;1;0.25" dur="1.2s" begin="-0.6s" repeatCount="indefinite"/></line>
+    <line x1="233" y1="378" x2="233" y2="394"><animate attributeName="opacity" values="0.25;1;0.25" dur="1.2s" begin="-0.5s" repeatCount="indefinite"/></line>
+    <line x1="252" y1="374" x2="252" y2="398"><animate attributeName="opacity" values="0.25;1;0.25" dur="1.2s" begin="-0.4s" repeatCount="indefinite"/></line>
+    <line x1="271" y1="370" x2="271" y2="402"><animate attributeName="opacity" values="0.25;1;0.25" dur="1.2s" begin="-0.3s" repeatCount="indefinite"/></line>
+    <line x1="290" y1="374" x2="290" y2="398"><animate attributeName="opacity" values="0.25;1;0.25" dur="1.2s" begin="-0.2s" repeatCount="indefinite"/></line>
+    <line x1="309" y1="378" x2="309" y2="394"><animate attributeName="opacity" values="0.25;1;0.25" dur="1.2s" begin="-0.1s" repeatCount="indefinite"/></line>
+    <line x1="328" y1="381" x2="328" y2="391"><animate attributeName="opacity" values="0.25;1;0.25" dur="1.2s" begin="0s" repeatCount="indefinite"/></line>
+  </g>
+</svg>

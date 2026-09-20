@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Vanya Gaming Cafe — neon sign logo, animated -->
+  <defs>
+    <radialGradient id="vgGlow" cx="50%" cy="42%" r="60%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#7C3AED" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="vgNeon" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <clipPath id="vgClip"><rect x="16" y="16" width="480" height="480" rx="110"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#vgClip)">
+    <rect x="16" y="16" width="480" height="480" rx="110" fill="#170F2B"/>
+    <rect x="16" y="16" width="480" height="480" rx="110" fill="url(#vgGlow)">
+      <animate attributeName="opacity" values="0.75;1;0.75" dur="3s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- grid floor -->
+    <g stroke="#8B5CF6" stroke-width="2" opacity="0.3">
+      <line x1="96" y1="452" x2="216" y2="352"><animate attributeName="opacity" values="0.12;0.4;0.12" dur="4s" repeatCount="indefinite"/></line>
+      <line x1="416" y1="452" x2="296" y2="352"><animate attributeName="opacity" values="0.4;0.12;0.4" dur="4s" repeatCount="indefinite"/></line>
+      <line x1="256" y1="470" x2="256" y2="356"/>
+    </g>
+
+    <!-- spinning gamepad orbit -->
+    <g fill="none" stroke-linecap="round">
+      <circle cx="256" cy="200" r="168" stroke="#22D3EE" stroke-width="7" stroke-dasharray="30 46">
+        <animateTransform attributeName="transform" type="rotate" from="0 256 200" to="360 256 200" dur="11s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="256" cy="200" r="150" stroke="#F472B6" stroke-width="5" stroke-dasharray="10 26" opacity="0.85">
+        <animateTransform attributeName="transform" type="rotate" from="360 256 200" to="0 256 200" dur="7s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- neon mug -->
+    <g>
+      <!-- flicker -->
+      <animate attributeName="opacity" values="1;1;0.55;1;0.92;1" keyTimes="0;0.52;0.54;0.58;0.6;1" dur="6s" repeatCount="indefinite"/>
+      <!-- glow layer -->
+      <g fill="none" stroke="#22D3EE" stroke-width="20" filter="url(#vgNeon)" opacity="0.9">
+        <path d="M150 176 h156 v96 a78 78 0 0 1 -156 0 Z"/>
+        <path d="M306 196 h30 a34 34 0 0 1 0 68 h-30"/>
+      </g>
+      <!-- core layer -->
+      <g fill="none" stroke="#BFF6FF" stroke-width="9" stroke-linejoin="round">
+        <path d="M150 176 h156 v96 a78 78 0 0 1 -156 0 Z"/>
+        <path d="M306 196 h30 a34 34 0 0 1 0 68 h-30"/>
+      </g>
+
+      <!-- controller D-pad + buttons inside mug -->
+      <g fill="#F472B6">
+        <path d="M204 218 h14 v-14 h14 v14 h14 v14 h-14 v14 h-14 v-14 h-14 Z" opacity="0.95"/>
+        <circle cx="266" cy="220" r="9" opacity="0.95"/>
+        <circle cx="284" cy="238" r="9" opacity="0.95"/>
+        <animate attributeName="opacity" values="0.95;0.5;0.95" dur="2.4s" repeatCount="indefinite"/>
+      </g>
+
+      <!-- steam -->
+      <g fill="none" stroke="#BFF6FF" stroke-width="8" stroke-linecap="round">
+        <path d="M198 148 q12 -20 0 -40">
+          <animate attributeName="d" values="M198 148 q12 -20 0 -40; M198 148 q-12 -20 0 -40; M198 148 q12 -20 0 -40" dur="2.6s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.6s" repeatCount="indefinite"/>
+        </path>
+        <path d="M242 140 q12 -20 0 -40">
+          <animate attributeName="d" values="M242 140 q-12 -20 0 -40; M242 140 q12 -20 0 -40; M242 140 q-12 -20 0 -40" dur="2.6s" begin="-0.9s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.6s" begin="-0.9s" repeatCount="indefinite"/>
+        </path>
+        <path d="M286 148 q12 -20 0 -40">
+          <animate attributeName="d" values="M286 148 q12 -20 0 -40; M286 148 q-12 -20 0 -40; M286 148 q12 -20 0 -40" dur="2.6s" begin="-1.7s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.6s" begin="-1.7s" repeatCount="indefinite"/>
+        </path>
+      </g>
+    </g>
+
+    <!-- neon wordmark -->
+    <text x="256" y="416" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="58" font-weight="900" letter-spacing="6" fill="none" stroke="#F472B6" stroke-width="2.5">VANYA</text>
+    <text x="256" y="416" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="58" font-weight="900" letter-spacing="6" fill="none" stroke="#22D3EE" stroke-width="1.4" opacity="0.8">
+      <animate attributeName="stroke" values="#22D3EE;#F472B6;#FDE047;#22D3EE" dur="5s" repeatCount="indefinite"/>
+    </text>
+    <text x="256" y="458" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" letter-spacing="12" fill="#BFF6FF" opacity="0.9">GAMING CAFE</text>
+
+    <!-- corner sparks -->
+    <g stroke-linecap="round">
+      <path d="M84 84 l8 18 18 8 -18 8 -8 18 -8 -18 -18 -8 18 -8 Z" fill="#FDE047">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="1.9s" repeatCount="indefinite"/>
+      </path>
+      <path d="M436 96 l7 16 16 7 -16 7 -7 16 -7 -16 -16 -7 16 -7 Z" fill="#22D3EE">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="1.9s" begin="-0.95s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+</svg>

@@ -49,7 +49,7 @@ export const projects: Project[] = [
     category: 'AI / SaaS',
     technologies: ['AI', 'React', 'TypeScript'],
     year: '2026',
-    image: '/capgen-logo.png',
+    image: '/logos/capgen-logo.svg',
     liveUrl: 'https://capgen.app',
   },
 
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     category: 'Mobile App',
     technologies: ['Kotlin', 'Android', 'TTS'],
     year: '2026',
-    image: '/yappdf-logo.png',
+    image: '/logos/yappdf-logo.svg',
     liveUrl: 'https://yappdf.app',
   },
 
@@ -73,7 +73,7 @@ export const projects: Project[] = [
     category: 'Web Tool',
     technologies: ['JavaScript', 'QR Code API'],
     year: '2026',
-    image: '/logos/qrmaker-logo.png',
+    image: '/logos/qrmaker-logo.svg',
     liveUrl: 'https://www.qrmaker.tech/',
   },
 
@@ -85,7 +85,7 @@ export const projects: Project[] = [
     category: 'Web Development',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     year: '2026',
-    image: '/logos/vanya-cafe-logo.jpg',
+    image: '/logos/vanya-cafe-logo.svg',
     liveUrl: 'https://vanyacafe.vercel.app/',
   },
 
